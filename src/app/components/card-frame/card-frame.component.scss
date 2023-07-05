@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.card-frame {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $light-gray;
+  width: 21rem;
+  height: 8.25rem;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+.card-frame.active {
+  border-color: $blue;
+  border-width: 2px;
+}
+
+.variation-price {
+  display: flex;
+  font-size: small;
+  color: $light-gray;
+}
+
+.image-acabamento {
+  height: 8.1rem;
+  width: 8.1rem;
+}
+.image-acabamento img {
+  max-width: 90%;
+  margin-top: 0.4rem;
+}

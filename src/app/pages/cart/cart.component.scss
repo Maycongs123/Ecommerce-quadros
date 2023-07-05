@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.button-div button {
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: rgb(5 139 112);
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 3rem;
+}
+
+.row-infos-product {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+}
+
+.image {
+    margin: 0 1rem 0 1rem;
+}
+
+.image img {
+  width: 5rem;
+}
+
+.delete-item-button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.row-quantity-subtotal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.select-quantity {
+    display: flex;
+    height: 1.5rem;
+    width: 3rem;
+    border: 0.5px solid $light-gray ;
+    justify-content: space-between;
+    padding: 4px 4px 2px 8px;
+}
+
+.cupom-section {
+    margin-top: 2rem;
+    padding: 0.5rem 0 0.5rem 0;
+    color: $light-gray;
+    border-top: 0.5px solid $light-gray ;
+    border-bottom: 0.5px solid $light-gray ;
+}
+
+.finish-cart-purchase {
+
+
+    h3 {
+        margin-left: 0.5rem;
+    }
+}
+

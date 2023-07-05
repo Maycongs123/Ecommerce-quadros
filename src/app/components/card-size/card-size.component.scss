@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.card-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $light-gray;
+  height: 6rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+.card-size.active {
+  border-color: $blue;
+  border-width: 2px;
+}
+
+.variation-price {
+  font-size: smaller;
+  color: $light-gray;
+}
