@@ -5,8 +5,29 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid $light-gray;
   border-top: 1px solid $light-gray;
+
+  @media (min-width: 990px) {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+}
+
+.product-details-div {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.purchase-div {
+  @media (min-width: 990px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 4rem 0 2rem;
+  }
 }
 
 .large-image-product {
@@ -15,11 +36,16 @@
   height: 20rem;
   justify-content: center;
   padding-top: 1rem;
+  margin-right: 5rem;
+
+  @media (min-width: 990px) {
+    width: 50%;
+  }
 }
 
 .cards-size {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
   gap: 0.5rem;
   margin-top: 1rem;
 }
@@ -29,13 +55,21 @@
 }
 
 .cards-frame {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
   gap: 0.5rem;
 }
 
-.checkout-div {
-  margin-top: 3rem;
+.large-title {
+  @media (min-width: 990px) {
+    font-size: 3rem;
+    margin: 0 0 2rem auto;
+  }
+}
+
+.variation-subtitle {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .red-price {
@@ -62,4 +96,14 @@
   span {
     color: white;
   }
+}
+
+.checkout-div {
+  margin-top: 3rem;
+  @media (min-width: 990px) {
+    background-color: whitesmoke;
+    padding: 2rem;
+  }
+
+ 
 }

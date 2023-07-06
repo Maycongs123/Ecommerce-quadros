@@ -8,38 +8,46 @@
       <img class="large-image" src="../../../assets/mind-set.jpg" alt="" />
     </div>
 
-    <h4>Quadro Mindset é Tudo</h4>
-
     <form action="">
-      <div class="variations">
-        <div class="form-selector selector-size">
-          <label for="">Selecione o Tamanho (em cm)</label><br />
-          <div class="cards-size">
-            <app-card-size></app-card-size>
-            <app-card-size></app-card-size>
-            <app-card-size></app-card-size>
-            <app-card-size></app-card-size>
+      <div class="form-div">
+        <h1 class="large-title">Quadro Mindset é Tudo</h1>
+        <div class="variations">
+          <div class="form-selector selector-size">
+            <label class="variation-subtitle" for=""
+              >Selecione o Tamanho (em cm)</label
+            >
+            <br />
+            <div class="cards-size">
+              <app-card-size></app-card-size>
+              <app-card-size></app-card-size>
+              <app-card-size></app-card-size>
+              <app-card-size></app-card-size>
+            </div>
+          </div>
+
+          <div class="form-selector selector-frame">
+            <label class="variation-subtitle" for=""
+              >Selecione o Acabamento</label
+            >
+            <br />
+            <br />
+            <div class="cards-frame">
+              <app-card-frame></app-card-frame>
+              <app-card-frame></app-card-frame>
+              <app-card-frame></app-card-frame>
+              <app-card-frame></app-card-frame>
+            </div>
           </div>
         </div>
 
-        <div class="form-selector selector-frame">
-          <label for="">Selecione o Acabamento</label> <br />
-          <div class="cards-frame">
-            <app-card-frame></app-card-frame>
-            <app-card-frame></app-card-frame>
-            <app-card-frame></app-card-frame>
-            <app-card-frame></app-card-frame>
+        <div class="checkout-div">
+          <div class="prices">
+            <span class="red-price">R$ 500,00</span>
+            <span class="price">R$ 344,00</span>
           </div>
-        </div>
-      </div>
 
-      <div class="checkout-div">
-        <div class="prices">
-          <span class="red-price">R$ 500,00</span>
-          <span class="price">R$ 344,00</span>
+          <button class="purchase-button"><span> COMPRAR AGORA</span></button>
         </div>
-
-        <button class="purchase-button"><span> COMPRAR AGORA</span></button>
       </div>
     </form>
   </div>

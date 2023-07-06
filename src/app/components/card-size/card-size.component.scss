@@ -9,11 +9,21 @@
   width: 10rem;
   background-color: white;
   border-radius: 0.2rem;
+
+  @media (min-width: 990px) {
+    height: 6rem;
+    width: 16rem;
+    font-size: large;
+  }
 }
 
 .card-size.active {
   border-color: $blue;
   border-width: 2px;
+
+  .size {
+    font-weight: 600;
+  }
 }
 
 .variation-price {
