@@ -1,3 +1,5 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 html,
 body {
   height: 100%;
@@ -5,9 +7,13 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .content-container {
   margin: 0 1rem;
+}
+
+.center-text {
+  text-align: center;
 }

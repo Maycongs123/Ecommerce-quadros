@@ -17,7 +17,7 @@ import { CardSizeComponent } from './components/card-size/card-size.component';
 import { CardFrameComponent } from './components/card-frame/card-frame.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -39,6 +39,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatGridListModule,
     MatIconModule,
     MatSelectModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

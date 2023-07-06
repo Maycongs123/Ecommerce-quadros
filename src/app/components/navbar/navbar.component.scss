@@ -1,4 +1,39 @@
+@import "../../styles/variables";
+
 #nav {
-    justify-content: space-between;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid $light-gray;
+  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+}
+
+.logo {
+  border: 1px solid $light-gray;
+  background: rgb(174, 238, 236);
+  background: rgb(174, 225, 238);
+  background: rgb(174, 225, 238);
+  background: radial-gradient(
+    circle,
+    rgba(174, 225, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  padding: 0.2rem;
+  color: blue;
+  cursor: pointer;
+}
+
+.menu-button {
+    border: none;
     background-color: white;
+    
+    .menu-button-icon {
+        font-size: 2rem;
+    }
+}
+
+.cart-button {
+    border: none;
+    background-color: white;
+    
 }

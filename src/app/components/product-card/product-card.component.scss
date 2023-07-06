@@ -1,4 +1,23 @@
+@import "../../styles/variables";
+
 .product-card {
-    height: 18.75rem;
-    width: 10rem;
+  height: 18.75rem;
+  width: 10rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+
+  
+
+  @media (min-width: 990px) {
+    width: 18.8rem;
+  }
+}
+
+.product-title {
+  font-weight: 500;
+}
+
+.price {
+  font-size: 0.8rem;
+  font-weight: 200;
 }
