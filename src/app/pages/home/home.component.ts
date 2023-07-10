@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core';
 
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { distinctUntilChanged, map, shareReplay, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,40 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  isMobile?: boolean;
+  Breakpoints = Breakpoints;
+  cols = 0;
 
-  constructor(private breakpointObserver: BreakpointObserver) {
-    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
-      this.isMobile = result.matches;
-    });
+  readonly breakpoint$ = this.breakpointObserver
+    .observe([
+      Breakpoints.Large,
+      Breakpoints.Medium,
+      Breakpoints.Small,
+      Breakpoints.XSmall,
+    ])
+    .pipe(distinctUntilChanged());
+
+  ngOnInit(): void {
+    this.breakpoint$.subscribe(() => this.breakpointChanged());
   }
+
+  private breakpointChanged() {
+    if (this.breakpointObserver.isMatched(Breakpoints.Large)) {
+      this.cols = 4;
+      return;
+    }
+    if (
+      this.breakpointObserver.isMatched(Breakpoints.Medium) ||
+      this.breakpointObserver.isMatched(Breakpoints.Small)
+    ) {
+      this.cols = 3;
+      return;
+    }
+
+    if (this.breakpointObserver.isMatched('(max-width: 500px)')) {
+      this.cols = 2;
+      return;
+    }
+  }
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
 }
