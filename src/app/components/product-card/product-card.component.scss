@@ -1,16 +1,18 @@
 @import "../../styles/variables";
 
 .product-card {
-  height: 18.75rem;
   width: 10rem;
   margin-bottom: 2rem;
   padding-top: 1rem;
-
   
-
   @media (min-width: 990px) {
-    width: 18.8rem;
+    width: 20rem;
   }
+}
+
+.product-img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .product-title {

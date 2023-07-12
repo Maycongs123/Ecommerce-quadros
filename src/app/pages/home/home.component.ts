@@ -19,7 +19,7 @@ export class HomeComponent {
       Breakpoints.Small,
       Breakpoints.XSmall,
     ])
-    .pipe(distinctUntilChanged());
+    .pipe(tap(console.log), distinctUntilChanged());
 
   ngOnInit(): void {
     this.breakpoint$.subscribe(() => this.breakpointChanged());
@@ -37,8 +37,7 @@ export class HomeComponent {
       this.cols = 3;
       return;
     }
-
-    if (this.breakpointObserver.isMatched('(max-width: 500px)')) {
+    if (this.breakpointObserver.isMatched('(max-width: 599px)')) {
       this.cols = 2;
       return;
     }
