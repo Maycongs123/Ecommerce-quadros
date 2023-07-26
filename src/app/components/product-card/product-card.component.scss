@@ -1,14 +1,13 @@
 @import "../../styles/variables";
 
-.product-card {
-  width: 10rem;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
+// .product-card {
+//   margin-bottom: 2rem;
+//   padding-top: 1rem;
   
-  @media (min-width: 990px) {
-    width: 20rem;
-  }
-}
+//   @media (min-width: 990px) {
+//     width: 30rem;
+//   }
+// }
 
 .product-img {
   width: 100%;
@@ -16,10 +15,11 @@
 }
 
 .product-title {
+  font-size: 25px;
   font-weight: 500;
 }
 
 .price {
-  font-size: 0.8rem;
+  font-size: 18px;
   font-weight: 200;
 }

@@ -22,11 +22,19 @@
 }
 
 .purchase-div {
-  @media (min-width: 760px) {
+  @media (min-width: 1250px) {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 10rem 0 10rem;
+    padding-top: 3rem
+  }
+}
+
+.div-flex{
+  @media (min-width: 750px) {
+    display: flex;
     justify-content: center;
-    margin: 0 4rem 0 2rem;
   }
 }
 
@@ -35,11 +43,14 @@
   width: 22.25rem;
   height: 20rem;
   justify-content: center;
-  padding-top: 1rem;
-  margin-right: 5rem;
+  padding-top: 1rem;  
 
-  @media (min-width: 990px) {
-    width: 50%;
+  @media (min-width: 1250px) {
+    display: flex;
+    width: 39.25rem;
+    height: 35rem;
+    justify-content: end;
+    transform: skew(195deg, -13deg);
   }
 }
 
@@ -48,6 +59,15 @@
   grid-template-columns: 50% 50%;
   gap: 0.5rem;
   margin-top: 1rem;
+  @media (min-width: 750px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 1250px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
 }
 
 .selector-frame {
@@ -57,16 +77,17 @@
 .cards-frame {
   display: grid;
   grid-template-columns: 100%;
-
   gap: 0.5rem;
 
-  @media (min-width: 990px) {
+  @media (min-width: 750px) {
     grid-template-columns: 50% 50%;
   }
 }
 
 .large-title {
   @media (min-width: 990px) {
+    display: flex;
+    justify-content: center;
     font-size: 3rem;
     margin: 0 0 2rem auto;
   }
@@ -88,6 +109,8 @@
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .purchase-button {
@@ -109,4 +132,16 @@
     background-color: whitesmoke;
     padding: 2rem;
   }
+}
+
+.padding-form{
+  @media (min-width: 1250px) {
+    padding-left: 5rem;
+  }
+}
+
+.products-details-div-body{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
 }

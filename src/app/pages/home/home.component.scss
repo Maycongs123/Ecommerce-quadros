@@ -1,0 +1,12 @@
+.products-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media (min-width: 820px) {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    @media (min-width: 1300px) {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
