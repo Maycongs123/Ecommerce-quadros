@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2a6c216d-41b3-433e-9c57-706c1fed5240/resourceGroups/GR_APP_ECOMMERCE_QUADROS/providers/Microsoft.Web/sites/appEcommerceQuadros",
+    "appService.deploySubpath": "."
+}
