@@ -2,6 +2,7 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
 
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { distinctUntilChanged, map, shareReplay, tap } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -43,5 +44,15 @@ export class HomeComponent {
     }
   }
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    protected router: Router,
+    ) {}
+
+
+    nextPage(imagem: string, title: string){
+      let dados = encodeURIComponent(JSON.stringify(imagem));
+      let name = encodeURIComponent(JSON.stringify(title));
+      this.router.navigate(['/product-details', dados, name]);
+    }
 }

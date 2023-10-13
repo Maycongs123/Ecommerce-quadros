@@ -10,3 +10,18 @@
         grid-template-columns: 25% 25% 25% 25%;
     }
 }
+
+.product-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .product-title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: 200;
+  }
